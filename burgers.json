@@ -1,0 +1,332 @@
+[
+  {
+    "restaurant": "Mad Grill",
+    "location": "Madrid",
+    "burgerName": "Smokey Burger",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-04-22",
+    "instagram": "https://www.instagram.com/p/CrVBt75MnhV/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    "maps": "https://www.google.com/maps/place/Mad+Grill/@40.4263263,-3.6981916,17z/data=!3m1!4b1!4m6!3m5!1s0xd42288efa2e9107:0x43897baa594ba627!8m2!3d40.4263222!4d-3.6956167!16s%2Fg%2F1yg579t1s?entry=ttu"
+  },
+  {
+    "restaurant": "Cafe comercial",
+    "location": "Madrid",
+    "burgerName": "Hamburguesa de vaca",
+    "burgerType": "normal",
+    "rating": 2,
+    "date": "2023-04-24",
+    "instagram": "https://www.instagram.com/p/CrblNFAsw0_/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Caf%C3%A9+Comercial/@40.4287178,-3.7045746,17z/data=!3m1!4b1!4m6!3m5!1s0xd42288a1a3b98b1:0xc40a8fd5d88d281e!8m2!3d40.4287137!4d-3.7019997!16s%2Fm%2F0by1fd9?entry=ttu"
+  },
+  {
+    "restaurant": "Frankie Burger",
+    "location": "Madrid",
+    "burgerName": "Super Frankie",
+    "burgerType": "normal",
+    "rating": 4,
+    "date": "2023-04-28",
+    "instagram": "https://www.instagram.com/p/CrmC0dasaPP/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Frankie+Burgers+Ponzano+%7C+Hamburguesas+Madrid/@40.4402886,-3.7014355,17z/data=!3m1!4b1!4m6!3m5!1s0xd4229a623922ee3:0x8cf52996ef8243ad!8m2!3d40.4402845!4d-3.6988606!16s%2Fg%2F11r91d85x5?entry=ttu"
+  },
+  {
+    "restaurant": "HDH",
+    "location": "Bilbao",
+    "burgerName": "Freak y Umami",
+    "burgerType": "normal",
+    "rating": 4,
+    "date": "2023-05-14",
+    "instagram": "https://www.instagram.com/p/CsPN5PvoDoY/?img_index=1",
+    "maps": "https://www.google.com/maps/place/HDH+(Imprescindible+reservar)/@43.2596151,-2.940748,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e5029c4a1621f:0x9f407f690c3df16!8m2!3d43.2596112!4d-2.9381731!16s%2Fg%2F1td59y6k?entry=ttu"
+  },
+  {
+    "restaurant": "Manhattan burger",
+    "location": "Bruselas",
+    "burgerName": "Gatsby",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-04-27",
+    "instagram": "https://www.instagram.com/p/CswzDyQoY6k/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Manhattn's+Burgers/@50.8390233,4.3933292,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3c5eca8c2ee61:0xdcb0e9cade2a9cb6!8m2!3d50.83902!4d4.3982001!16s%2Fg%2F11f5vpz5rk?entry=ttu"
+  },
+  {
+    "restaurant": "La Carnaza",
+    "location": "Madrid",
+    "burgerName": "Heidi",
+    "burgerType": "normal",
+    "rating": 4,
+    "date": "2023-06-09",
+    "instagram": "https://www.instagram.com/p/CtSJTJ-Iao6/",
+    "maps": "https://www.google.com/maps/place/Manhattn's+Burgers/@50.8390233,4.3933292,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3c5eca8c2ee61:0xdcb0e9cade2a9cb6!8m2!3d50.83902!4d4.3982001!16s%2Fg%2F11f5vpz5rk?entry=ttu"
+  },
+  {
+    "restaurant": "Juanchos",
+    "location": "Madrid",
+    "burgerName": "Juancheeseburger",
+    "burgerType": "normal",
+    "rating": 5,
+    "date": "2023-06-09",
+    "instagram": "https://www.instagram.com/p/CtSLE5uIUn3/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Juancho's+BBQ+(Chamber%C3%AD)/@40.4361779,-3.7000267,17z/data=!3m2!4b1!5s0xd4228f381454095:0xeea7b76dc754a652!4m6!3m5!1s0xd42294bc124effb:0xdb2394909f257af5!8m2!3d40.4361738!4d-3.6974518!16s%2Fg%2F11j8_5ff9d?entry=ttu"
+  },
+  {
+    "restaurant": "Torpedo",
+    "location": "Barcelona",
+    "burgerName": "Burger",
+    "burgerType": "normal",
+    "rating": 4,
+    "date": "2023-06-18",
+    "instagram": "https://www.instagram.com/p/CtoddWSogjO/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Bar+Torpedo/@41.3922348,2.1513264,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a32b63f8ac41:0xffed19a8db3637f9!8m2!3d41.3922308!4d2.1539013!16s%2Fg%2F11gx_qyr98?entry=ttu"
+  },
+  {
+    "restaurant": "Chiringuito Praia do Cabo do Mondo",
+    "location": "Oporto",
+    "burgerName": "Burger",
+    "burgerType": "normal",
+    "rating": 1,
+    "date": "2023-06-25",
+    "instagram": "https://www.instagram.com/p/Ct693I2o4nu/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Ondas+Sobre+O+Mar/@41.2204507,-8.7142288,20z/data=!4m14!1m7!3m6!1s0xd24691aa8758db7:0x3a39ea9d1f63d6a4!2sPraia+do+Cabo+do+Mundo!8m2!3d41.2205925!4d-8.7149819!16s%2Fg%2F11b6_cx2sh!3m5!1s0xd2468de7a65de3d:0xf1b5a55f4db34ec4!8m2!3d41.2206201!4d-8.7142516!16s%2Fg%2F1td2_r65?entry=ttu"
+  },
+  {
+    "restaurant": "La Bistroteca",
+    "location": "Madrid",
+    "burgerName": "Wellington y Palma",
+    "burgerType": "normal",
+    "rating": 5,
+    "date": "2023-07-14",
+    "instagram": "https://www.instagram.com/p/CusX8ZyoMHR/?img_index=1",
+    "maps": "https://www.google.com/maps/place/La+Bistroteca/@40.4243386,-3.681661,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228bcc8d074b5:0xf6ed871279810e38!8m2!3d40.4243345!4d-3.6790861!16s%2Fg%2F11clyw8mvn?entry=ttu"
+  },
+  {
+    "restaurant": "Corbalan",
+    "location": "Ares",
+    "burgerName": "Mally",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-07-22",
+    "instagram": "https://www.instagram.com/p/CvA7PvGoT2s/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Corbalan/@43.4256512,-8.2467335,17z/data=!3m1!4b1!4m6!3m5!1s0xd2e76c81120f937:0xef7ac2b2e99d78df!8m2!3d43.4256473!4d-8.2441586!16s%2Fg%2F11c74y1l8q?entry=ttu"
+  },
+  {
+    "restaurant": "Prozdor",
+    "location": "Tel Aviv",
+    "burgerName": "Tasty food is for free",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-08-04",
+    "instagram": "https://www.instagram.com/p/CvheIv4IS7k/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Prozdor/@32.0791495,34.7659967,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c7ea756a1f1:0xc09b71c232e27c97!8m2!3d32.079145!4d34.7685716!16s%2Fg%2F1tndgnx5?entry=ttu"
+  },
+  {
+    "restaurant": "Cafeteria HD",
+    "location": "Madrid",
+    "burgerName": "Eggburger",
+    "burgerType": "normal",
+    "rating": 4,
+    "date": "2023-08-11",
+    "instagram": "https://www.instagram.com/p/Cv0SpomoKRH/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Cafeter%C3%ADa+HD/@40.4360753,-3.7158686,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228432da1a851:0x3d7986427fb2312e!8m2!3d40.4360712!4d-3.7132937!16s%2Fg%2F1tdxx9wf?entry=ttu"
+  },
+  {
+    "restaurant": "Santa Rosalia",
+    "location": "Bilbao",
+    "burgerName": "De Santa Rosalia burger",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-08-23",
+    "instagram": "https://www.instagram.com/p/CwTU4TyIxsv/",
+    "maps": "https://www.google.com/maps/place/Restaurantes+Bilbao+De+Santa+Rosalia/@43.2620075,-2.9352858,17z/data=!3m2!4b1!5s0xd4e4fd738237dd5:0x67bc4168c9c99865!4m6!3m5!1s0xd4e4fd0b3640f79:0x181dd14b751f7728!8m2!3d43.2620036!4d-2.9327109!16s%2Fg%2F1tglp6c0?entry=ttu"
+  },
+  {
+    "restaurant": "Abaco",
+    "location": "Noja",
+    "burgerName": "Route 66 Burger",
+    "burgerType": "normal",
+    "rating": 1,
+    "date": "2023-08-24",
+    "instagram": "https://www.instagram.com/p/CwVzUA0IUD9/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Pub+Abaco+Ruta+66+Noja/@43.4833664,-3.5321065,17z/data=!3m1!4b1!4m6!3m5!1s0xd4eb91215af862f:0x8766a69f255b5edc!8m2!3d43.4833625!4d-3.5295316!16s%2Fg%2F11bxjnm6gs?entry=ttu"
+  },
+  {
+    "restaurant": "Chez Tato",
+    "location": "Noja",
+    "burgerName": "La treinta\u00f1era",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-09-02",
+    "instagram": "https://www.instagram.com/p/CwtBPmdIeeo/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Playa+de+Ris/@43.4888871,-3.529367,16.92z/data=!4m14!1m7!3m6!1s0xd4eb91215af862f:0x8766a69f255b5edc!2sPub+Abaco+Ruta+66+Noja!8m2!3d43.4833625!4d-3.5295316!16s%2Fg%2F11bxjnm6gs!3m5!1s0xd4eb96dfd3640ab:0x71f30d8bfafe5abd!8m2!3d43.4908937!4d-3.5298864!16s%2Fg%2F121p79wt?entry=ttu"
+  },
+  {
+    "restaurant": "O Palique",
+    "location": "Mondo\u00f1edo",
+    "burgerName": "Iberica y Crunchy",
+    "burgerType": "normal",
+    "rating": 4,
+    "date": "2023-09-28",
+    "instagram": "https://www.instagram.com/p/Cxvt2uzo4Mb/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Bar+O+PALIQUE+Restaurante/@43.4295738,-7.3660741,17z/data=!3m1!4b1!4m6!3m5!1s0xd318daa66bf81af:0x8acb11f11a1936f1!8m2!3d43.4295699!4d-7.3634992!16s%2Fg%2F11h7b6bg6t?entry=ttu"
+  },
+  {
+    "restaurant": "Lupe\u00b4s",
+    "location": "Santiago de Compostela",
+    "burgerName": "Completa",
+    "burgerType": "normal",
+    "rating": 2,
+    "date": "2023-09-30",
+    "instagram": "https://www.instagram.com/p/Cx0-bT_oV7h/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Lupe%C2%B4s+Coffee+%26+Beer/@42.8612862,-8.5440093,17z/data=!3m1!4b1!4m6!3m5!1s0xd2eff2736114371:0xf90f3223b5a2cd57!8m2!3d42.8612823!4d-8.5414344!16s%2Fg%2F11rwp3yg4h?entry=ttu"
+  },
+  {
+    "restaurant": "Junk",
+    "location": "Madrid",
+    "burgerName": "Le Gagnant",
+    "burgerType": "smash",
+    "rating": 3,
+    "date": "2023-10-06",
+    "instagram": "https://www.instagram.com/p/CyEncALowPp/?img_index=1",
+    "maps": "https://www.google.com/maps/place/JUNK/@40.4287983,-3.70449,17z/data=!3m1!4b1!4m6!3m5!1s0xd42295b66e3fb4d:0x61b88605cdcea15e!8m2!3d40.4287942!4d-3.7019151!16s%2Fg%2F11k4t9hj54?entry=ttu"
+  },
+  {
+    "restaurant": "Vicio",
+    "location": "Madrid",
+    "burgerName": "Originals",
+    "burgerType": "smash",
+    "rating": 4,
+    "date": "2023-10-09",
+    "instagram": "https://www.instagram.com/p/CyML0PCIhN4/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Restaurante+VICIO/@40.4353062,-3.6941951,17z/data=!3m2!4b1!5s0xd422892d0f98f7f:0xf4172b10c3c9806b!4m6!3m5!1s0xd42293fe39b40a9:0x1ef66ac4b4ff872f!8m2!3d40.4353021!4d-3.6916202!16s%2Fg%2F11l20h51_q?entry=ttu"
+  },
+  {
+    "restaurant": "Burnout",
+    "location": "Madrid",
+    "burgerName": "Smokin Burnout",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-10-26",
+    "instagram": "https://www.instagram.com/p/Cy3862Rox-d/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Restaurante+VICIO/@40.4353062,-3.6941951,17z/data=!3m2!4b1!5s0xd422892d0f98f7f:0xf4172b10c3c9806b!4m6!3m5!1s0xd42293fe39b40a9:0x1ef66ac4b4ff872f!8m2!3d40.4353021!4d-3.6916202!16s%2Fg%2F11l20h51_q?entry=ttu"
+  },
+  {
+    "restaurant": "Hundred",
+    "location": "Madrid",
+    "burgerName": "Singular",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-10-30",
+    "instagram": "https://www.instagram.com/p/CzCcbKBoLy8/?img_index=1",
+    "maps": "https://www.google.com/maps/place/HUNDRED/@40.4338761,-3.7050979,17z/data=!3m2!4b1!5s0xd4228f550a538b9:0xa6a4650d110273e2!4m6!3m5!1s0xd422907d222666b:0xbd72067cae06430a!8m2!3d40.433872!4d-3.702523!16s%2Fg%2F11vbwp2kbp?entry=ttu"
+  },
+  {
+    "restaurant": "7th Street Burger",
+    "location": "Nueva York",
+    "burgerName": "Double",
+    "burgerType": "smash",
+    "rating": 5,
+    "date": "2023-11-01",
+    "instagram": "https://www.instagram.com/p/CzGqCEuOK3A/?img_index=1",
+    "maps": "https://www.google.com/maps/place/7th+Street+Burger+Times+Square/@40.7544322,-73.998465,14.75z/data=!3m1!5s0x89c259a86a8b6b47:0xe4d1f000e1e77eaa!4m10!1m2!2m1!1s7th+Avenue+burger+new+york!3m6!1s0x89c259b1def79d41:0x3a58f1b44c5b15f6!8m2!3d40.7525357!4d-73.9892758!15sCho3dGggQXZlbnVlIGJ1cmdlciBuZXcgeW9yayIDiAEBWhwiGjd0aCBhdmVudWUgYnVyZ2VyIG5ldyB5b3JrkgEUaGFtYnVyZ2VyX3Jlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUmFaMlZFWVdGM0VBReABAA!16s%2Fg%2F11k57hb_zf?entry=ttu"
+  },
+  {
+    "restaurant": "Au Cheval",
+    "location": "Nueva York",
+    "burgerName": "Doublecheeburger with bacon and egg",
+    "burgerType": "normal",
+    "rating": 4,
+    "date": "2023-11-01",
+    "instagram": "https://www.instagram.com/p/CzHYxgbxS21/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Au+Cheval/@40.7181199,-74.0045366,17z/data=!3m2!4b1!5s0x89c25a20a0f09dbb:0xd63ebda4daa20cda!4m6!3m5!1s0x89c25bb44ec0f1b7:0x4cfe753b3a1f111!8m2!3d40.7181159!4d-74.0019617!16s%2Fg%2F11gyc6jp6q?entry=ttu"
+  },
+  {
+    "restaurant": "La Prensa Malasa\u00f1a",
+    "location": "Madrid",
+    "burgerName": "Bacon Double Cheeseburger",
+    "burgerType": "smash",
+    "rating": 2,
+    "date": "2023-11-09",
+    "instagram": "https://www.instagram.com/p/CzbfuIzoPkD/?img_index=1",
+    "maps": "https://www.google.com/maps/place/La+Prensa+Burger+%F0%9F%8D%94+-+Malasa%C3%B1a/@40.4237481,-3.7035918,17z/data=!3m1!4b1!4m6!3m5!1s0xd422916f6a5a9b3:0xe81f84b6929ef5f8!8m2!3d40.423744!4d-3.7010169!16s%2Fg%2F11lsg2tb63?entry=ttu"
+  },
+  {
+    "restaurant": "Topa",
+    "location": "San Sebastian",
+    "burgerName": "Topa",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-11-11",
+    "instagram": "https://www.instagram.com/p/CzgpZ-Wonn9/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Topa+Sukalder%C3%ADa/@43.3227496,-1.9803521,17z/data=!3m1!4b1!4m6!3m5!1s0xd51a5454f833d9b:0xdc5e0803c6ce760f!8m2!3d43.3227457!4d-1.9777772!16s%2Fg%2F11c6rttl9x?entry=ttu"
+  },
+  {
+    "restaurant": "Manteca",
+    "location": "Madrid",
+    "burgerName": "Butter y American Style",
+    "burgerType": "smash",
+    "rating": 4,
+    "date": "2023-11-13",
+    "instagram": "https://www.instagram.com/p/CzpA3VUMrdU/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Manteca/@40.4318893,-3.6841901,17z/data=!3m2!4b1!5s0xd4228bf194b8f83:0xc66fdb1c17012544!4m6!3m5!1s0x66ee7f5fc9172653:0x4066b2708f6d04dc!8m2!3d40.4318853!4d-3.6793192!16s%2Fg%2F11tjsb1kzs?entry=ttu"
+  },
+  {
+    "restaurant": "Cesar\u2019s Burger",
+    "location": "Madrid",
+    "burgerName": "La campeona",
+    "burgerType": "smash",
+    "rating": 3,
+    "date": "2023-11-26",
+    "instagram": "https://www.instagram.com/p/C0HTgiTI9Vt/?img_index=1",
+    "maps": "https://www.google.com/maps/place/Cesar's+burgers/@40.423806,-3.6987634,17z/data=!3m1!4b1!4m6!3m5!1s0xd4229a51e22461d:0xfd71f4e13f3ee60d!8m2!3d40.4238019!4d-3.6961885!16s%2Fg%2F11t3190gxg?entry=ttu"
+  },
+  {
+    "restaurant": "Dalu Burger",
+    "location": "Madrid",
+    "burgerName": "La Americana",
+    "burgerType": "smash",
+    "rating": 3,
+    "date": "2023-12-08",
+    "instagram": "https://www.instagram.com/p/C0mz1O2I0Ns/?img_index=1",
+    "maps": "https://www.google.com/maps/place/DAL%C3%99+BURGER/@40.4303931,-3.7022045,15z/data=!4m2!3m1!1s0x0:0x492c63b02fc7cc98?sa=X&ved=2ahUKEwiqwOuK2IqDAxV-AfsDHZG4C9MQ_BJ6BAhWEAA"
+  },
+  {
+    "restaurant": "Prost Chamber\u00ed",
+    "location": "Madrid",
+    "burgerName": "Prost XXL",
+    "burgerType": "normal",
+    "rating": 2,
+    "date": "2023-12-15",
+    "instagram": "https://www.instagram.com/p/C05Ab5coD0d/",
+    "maps": "https://www.google.com/maps/place/Prost+Chamber%C3%AD/@40.4342212,-3.7080771,15z/data=!4m2!3m1!1s0x0:0x60ad11f4e25b45cd?sa=X&ved=2ahUKEwjxjcPn-tWDAxXNSfEDHQohDq0Q_BJ6BAgQEAA"
+  },
+  {
+    "restaurant": "New York Burger",
+    "location": "Madrid",
+    "burgerName": "Liberty",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2023-12-20",
+    "instagram": "https://www.instagram.com/p/C1KhekBobS5/",
+    "maps": "https://www.google.com/maps/place/New+York+Burger+-+Torre+Caleido/@40.4773935,-3.6893627,15z/data=!4m2!3m1!1s0x0:0x884ad3e1872433?sa=X&ved=https://www.google.com/maps/place/New+York+Burger+-+Torre+Caleido/@40.4773935,-3.6893627,15z/data=!4m6!3m5!1s0xd42297ca6b4f1e7:0x884ad3e1872433!8m2!3d40.4773935!4d-3.6893627!16s%2Fg%2F11tc3nvf64?entry=ttu"
+  },
+  {
+    "restaurant": "Juancho\u00b4s ESMAS",
+    "location": "Madrid",
+    "burgerName": "Champion",
+    "burgerType": "smash",
+    "rating": 5,
+    "date": "2023-12-22",
+    "instagram": "https://www.instagram.com/p/C1K013ioNUg/?img_index=4",
+    "maps": "https://www.google.com/maps/place/ESM%C3%81S+by+Juancho's+BBQ+(Mercado+de+San+Ant%C3%B3n)/@40.4257285,-3.714736,14.87z/data=!3m1!5s0xd422885e099d7c9:0x6f78f8302924c872!4m10!1m2!2m1!1sJUANCHOS+ESMAS!3m6!1s0xd422950c87a1e23:0x3ced13d3fa7877b3!8m2!3d40.4220473!4d-3.6975538!15sCg5KVUFOQ0hPUyBFU01BU1oQIg5qdWFuY2hvcyBlc21hc5IBFGhhbWJ1cmdlcl9yZXN0YXVyYW504AEA!16s%2Fg%2F11nntzfm25?entry=ttu"
+  },
+  {
+    "restaurant": "Berty\u00b4s",
+    "location": "Bilbao",
+    "burgerName": "Dry Aged",
+    "burgerType": "normal",
+    "rating": 3,
+    "date": "2024-01-04",
+    "instagram": "https://www.instagram.com/p/C1sV_rkIEZV/?img_index=4",
+    "maps": "https://www.google.com/maps/place/Berty's+Burger+Bilbao/@43.2656933,-2.9408212,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e4fcaf8b069f9:0x69e944b4732fd5f5!8m2!3d43.2656895!4d-2.9359503!16s%2Fg%2F11sckfh5sl?entry=ttu"
+  }
+]

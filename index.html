@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DaBurgger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🍔 DaBurgger Rankings</h1>
+
+  <div class="controls">
+    <div class="filters">
+      <label for="location-filter">Location:</label>
+      <select id="location-filter">
+        <option value="">All</option>
+      </select>
+
+      <label for="type-filter">Type:</label>
+      <select id="type-filter">
+        <option value="">All</option>
+        <option value="smash">Smash</option>
+        <option value="normal">Normal</option>
+      </select>
+    </div>
+
+    <div class="sort-buttons">
+      <button id="sort-rating">Sort by Rating</button>
+      <button id="sort-location">Sort by Location</button>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table id="burger-table">
+      <thead>
+        <tr>
+          <th>Restaurant</th>
+          <th>Location</th>
+          <th>Burger Name</th>
+          <th>Type</th>
+          <th>Rating</th>
+          <th>Date</th>
+          <th>Instagram</th>
+          <th>Maps</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
