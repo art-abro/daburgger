@@ -4,30 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DaBurgger</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <h1>🍔 DaBurgger Rankings</h1>
+  <h1>🍔 DaBurgger Rankings 🍔 </h1>
 
-  <div class="controls">
-    <div class="filters">
-      <label for="location-filter">Location:</label>
-      <select id="location-filter">
-        <option value="">All</option>
-      </select>
 
-      <label for="type-filter">Type:</label>
-      <select id="type-filter">
-        <option value="">All</option>
-        <option value="smash">Smash</option>
-        <option value="normal">Normal</option>
-      </select>
+  <div class="controls controls-split">
+    <div class="col left">
+      <div class="filters">
+        <label for="location-filter">Location:</label>
+        <select id="location-filter">
+          <option value="">All</option>
+        </select>
+
+        <label for="type-filter">Type:</label>
+        <select id="type-filter">
+          <option value="">All</option>
+          <option value="smash">Smash</option>
+          <option value="normal">Normal</option>
+        </select>
+      </div>
     </div>
 
-    <div class="sort-buttons">
-      <button id="sort-rating">Sort by Rating</button>
-      <button id="sort-location">Sort by Location</button>
+    <div class="col middle">
+      <div class="sort-buttons">
+        <button id="sort-rating"   type="button">Sort by Rating</button>
+        <button id="sort-location" type="button">Sort by Location</button>
+        <button id="sort-restaurant" type="button">Sort by Restaurant</button>
+        <button id="sort-date" type="button">Sort by Date</button>
+      </div>
     </div>
+
+    <div style="margin-left:auto; display:flex; gap:10px;">
+      <a id="navMain" href="/index.html" class="back-btn">Main</a>
+      <a id="navAdmin" href="/admin.html" class="other-btn">Admin</a>
+      <a id="navArch"  href="/architecture.html" class="other-btn">Architecture</a>
+    </div>
+
   </div>
 
   <div class="table-container">
@@ -48,6 +62,7 @@
     </table>
   </div>
 
-  <script src="script.js"></script>
+  <script src="/assets/js/script.js" defer></script>
+
 </body>
 </html>

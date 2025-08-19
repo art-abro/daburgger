@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DaBurgger — Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Reuse main site styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <h1>DaBurgger Admin</h1>
+
+<!-- Auth bar -->
+<div class="controls" id="authBar" style="gap:10px; align-items:center;">
+  <div id="authStatus" style="opacity:.9;"></div>
+  <div style="margin-left:auto; display:flex; gap:10px;">
+    <button id="loginBtn"  type="button" title="Sign in"  hidden>Login</button>
+    <button id="logoutBtn" type="button" title="Sign out" hidden>Logout</button>
+    <a id="navMain" href="/index.html" class="back-btn">Main</a>
+    <a id="navAdmin" href="/admin.html" class="other-btn">Admin</a>
+    <a id="navArch"  href="/architecture.html" class="other-btn">Architecture</a>
+  </div>
+</div>
+
+<!-- Gate the admin content while logged out -->
+<div id="adminGate" hidden>
+  <p style="text-align:center; opacity:.85;">You must be signed in as an admin to manage burgers.</p>
+</div>
+
+<div id="adminContent" hidden>
+  <div class="controls">
+    <div class="filters"><strong>Manage burgers</strong></div>
+    <div class="sort-buttons">
+      <button id="refreshBtn" type="button" title="Refresh list">↻ Refresh</button>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="table-container" role="region" aria-live="polite" aria-busy="false" id="tableWrap">
+    <table id="burgersTable">
+      <thead>
+        <tr>
+          <th>Restaurant</th><th>Location</th><th>Burger Name</th><th>Type</th>
+          <th>Rating</th><th>Date</th><th>Instagram</th><th>Maps</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="burgersTbody"></tbody>
+    </table>
+  </div>
+  <p id="emptyState" style="text-align:center; opacity:.8; margin:12px 0;" hidden>
+    No burgers yet. Add one below!
+  </p>
+
+  <!-- Add Burger -->
+  <h2 style="text-align:center; color:#ffbf80; margin-top:28px;">Add a burger</h2>
+  <form id="addBurgerForm" autocomplete="off" style="max-width:900px; margin:0 auto; display:grid; gap:14px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+      <div>
+        <label for="restaurant">Restaurant *</label>
+        <input id="restaurant" name="restaurant" type="text" required placeholder="e.g., Burger Palace" />
+      </div>
+      <div>
+        <label for="location">Location *</label>
+        <input id="location" name="location" type="text" required placeholder="e.g., Paris" />
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+      <div>
+        <label for="burgerName">Burger Name *</label>
+        <input id="burgerName" name="burgerName" type="text" required placeholder="e.g., Classic Cheeseburger" />
+      </div>
+      <div>
+        <label for="burgerType">Type *</label>
+        <select id="burgerType" name="burgerType" required>
+          <option value="" disabled selected>Select type</option>
+          <option value="normal">normal</option>
+          <option value="smash">smash</option>
+        </select>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+      <div>
+        <label for="rating">Rating (1–5) *</label>
+        <input id="rating" name="rating" type="number" min="1" max="5" step="1" required placeholder="5" />
+      </div>
+      <div>
+        <label for="date">Date *</label>
+        <input id="date" name="date" type="date" required />
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+      <div>
+        <label for="instagram">Instagram URL *</label>
+        <input id="instagram" name="instagram" type="url" required placeholder="https://instagram.com/…" />
+      </div>
+      <div>
+        <label for="maps">Google Maps URL *</label>
+        <input id="maps" name="maps" type="url" required placeholder="https://maps.google.com/…" />
+      </div>
+    </div>
+
+    <div style="display:flex; gap:10px; justify-content:center; margin-top:6px;">
+      <button type="submit">Add Burger</button>
+      <button type="reset">Reset</button>
+    </div>
+
+    <p style="text-align:center; opacity:.8; margin:0;">
+      ID is created automatically by the backend.
+    </p>
+  </form>
+
+
+  <!-- Loading overlay -->
+  <div id="loading" style="position:fixed; inset:0; display:grid; place-items:center; background:rgba(0,0,0,.35); backdrop-filter:blur(2px); opacity:0; pointer-events:none; transition:opacity .2s;" aria-hidden="true">
+    <div style="text-align:center;">
+      <div style="width:36px;height:36px;margin:0 auto 8px;border:3px solid rgba(255,255,255,.25);border-top-color:#fff;border-radius:50%;animation:spin 1s linear infinite;"></div>
+      <div id="loadingText">Loading…</div>
+    </div>
+  </div>
+  <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+
+  <!-- Toast -->
+  <div id="toast" role="status" aria-live="polite" hidden
+       style="position:fixed;left:50%;bottom:22px;transform:translateX(-50%);padding:10px 14px;background:#1a1a1e;border:1px solid #444;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.4);">
+  </div>
+</div> <!-- END #adminContent -->
+
+  <!-- Auth placeholder (Cognito to be added later) -->
+  <!-- TODO: Inject Cognito idToken in admin.js:getAuthHeaders() when auth is enabled -->
+
+  <script src="/assets/js/admin.js?v=local1" defer></script>
+
+</body>
+</html>

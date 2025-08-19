@@ -1,0 +1,165 @@
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  color: #ff914d;
+}
+
+/* Controls layout */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  gap: 20px;
+}
+
+/* 3‑section split */
+.controls.controls-split {
+  flex-wrap: nowrap;           /* keep one line on desktop */
+  gap: 20px;
+}
+.controls.controls-split .col {
+  flex: 1 1 0;                 /* allow shrink */
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+/* Give the filters column more room; let middle take a bit less */
+.controls.controls-split .col.left   { flex: 2 1 0; justify-content: flex-end; min-width: 0; }
+.controls.controls-split .col.middle { flex: 1 1 320px; justify-content: flex-start; padding-left: 24px; }
+.controls.controls-split .col.right  { flex: 0 0 auto; }
+
+/* Filters */
+/* Keep filters on one line but allow items to shrink */
+.filters {
+  display: flex;
+  flex-wrap: nowrap;   /* no wrap */
+  gap: 8px;
+  align-items: center;
+  min-width: 0;        /* allow shrinking */
+  overflow: hidden;    /* avoid scroll bar */
+  white-space: nowrap;
+}
+.filters > * { flex: 0 1 auto; }   /* children can shrink */
+
+/* Sort buttons */
+.sort-buttons {
+  display: flex;
+  flex-wrap: nowrap;           /* single line */
+  gap: 10px;
+}
+.sort-buttons button { white-space: nowrap; }
+
+/* other button (same size/feel as sort buttons, different color) */
+.other-btn {
+  background-color: #555;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.other-btn:hover {
+  background-color: #333;
+}
+
+/* back button on admin page can share same styling */
+.back-btn {
+  background-color: #555;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-btn:hover { background-color: #333; }
+
+/* Generic buttons (sort buttons use <button>) */
+button {
+  padding: 8px 14px;
+  background-color: #ff914d;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover { background-color: #e56c25; }
+button.active { outline: 2px solid #ffbf80; }
+
+/* Forms */
+label { color: #f1f1f1; }
+select {
+  background-color: #333;
+  color: #f1f1f1;
+  border: 1px solid #555;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
+  border-color: #ff914d;
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2c2c2c;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  table-layout: auto;
+}
+th, td {
+  padding: 12px;
+  border: 1px solid #444;
+  text-align: center;
+}
+th {
+  background-color: #444;
+  color: #ffbf80;
+}
+tr:nth-child(even) { background-color: #333; }
+
+/* Links */
+a { color: #1e90ff; text-decoration: none; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  /* Stack the three sections on smaller screens */
+  .controls.controls-split {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .controls.controls-split .col {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters,
+  .sort-buttons {
+    justify-content: center;
+  }
+
+  table { font-size: 14px; }
+  th, td { padding: 8px; }
+}

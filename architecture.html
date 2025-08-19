@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DaBurgger — Architecture & Project Diary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <h1>DaBurgger — Architecture & Project Diary</h1>
+
+  <!-- Top controls: links to Main and Admin -->
+  <div class="controls">
+    <div style="margin-left:auto; display:flex; gap:10px;">
+      <a id="navMain" href="/index.html" class="back-btn">Main</a>
+      <a id="navAdmin" href="/admin.html" class="other-btn">Admin</a>
+      <a id="navArch"  href="/architecture.html" class="other-btn">Architecture</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>Context</h2>
+    <p>
+      This project is simply a way to learn AWS by building something. Leveraging my
+      <a href="https://www.instagram.com/daburgger" target="_blank">@daburgger</a> Instagram page, I’m creating a
+      dedicated support site to showcase and expand burger reviews. The end goal is a platform where anyone can add their
+      own burgers — complete with ratings, reviews, and photos. This is work in progress and we will update the architecture description as we improve the app. The latest description update is from August 12th 2025.
+    </p>
+  </section>
+
+  <section>
+    <h2>Architecture Overview</h2>
+    <p>
+      DaBurgger is a lightweight, serverless web application. The static frontend lives in <strong>Amazon S3</strong> and
+      is served worldwide via <strong>Amazon CloudFront</strong>. Dynamic requests go through <strong>Amazon API Gateway</strong>,
+      which triggers <strong>AWS Lambda</strong> functions to handle business logic and interact with <strong>Amazon DynamoDB</strong>
+      for storage. <strong>Amazon Cognito</strong> handles sign-in for the admin; the browser receives tokens after login. API Gateway uses a JWT authorizer tied to the Cognito user pool for POST/DELETE on /burgers, while GET remains public. <strong>IAM</strong> manages secure permissions between services, and <strong>AWS Cost Explorer</strong> keeps budgets
+      in check. This architecture is built for global reach, low cost, and zero server maintenance.
+    </p>
+  </section>
+
+  <section>
+    <h2>AWS Services</h2>
+    <ul>
+      <li><strong>Amazon S3</strong> — Hosts the static frontend (HTML, CSS, JS) for main site and admin.</li>
+      <li><strong>Amazon CloudFront</strong> — CDN delivering the site globally and proxying API requests.</li>
+      <li><strong>Amazon Route 53</strong> — Custom domain <code>daburgger.com</code> with DNS routing to CloudFront.</li>
+      <li><strong>Amazon API Gateway</strong> — Handles HTTP API requests; JWT authorizer (Cognito) protects POST /burgers and DELETE /burgers/{id}; GET /burgers stays public. </li>
+      <li><strong>AWS Lambda</strong> — Backend logic for listing, adding, and deleting burgers.</li>
+      <li><strong>Amazon DynamoDB</strong> — NoSQL database storing burger entries and metadata.</li>
+      <li><strong>Amazon Cognito</strong> — Manages user pool for admin access to POST and DELETE APIs.</li>
+      <li><strong>AWS IAM</strong> — Role-based permissions for Lambda and other services.</li>
+      <li><strong>AWS Cost Explorer</strong> — Budgets and cost tracking to manage spending.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Non-AWS Services</h2>
+    <ul>
+      <li><strong>GitHub</strong> — Source control & version tracking</li>
+      <li><strong>VS Code</strong> — Development environment</li>
+      <li><strong>Postman</strong> — API testing</li>
+      <li><strong>Draw.io / Lucidchart</strong> — Architecture diagram creation</li>
+      <li><strong>Instagram</strong> — <a href="https://www.instagram.com/daburgger" target="_blank">@daburgger</a> community & content source</li>
+      <li><strong>ChatGPT</strong> — Development guidance, code generation, and troubleshooting</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Architecture Diagram</h2>
+    <img src="/assets/img/architecture.png" alt="DaBurgger AWS Architecture" style="max-width:100%; height:auto;">
+    <ul>
+      <li><strong>Static Content</strong> — HTML, CSS, and JS are cached in CloudFront and served from S3.</li>
+      <li><strong>API Requests</strong> — Frontend calls to <code>/burgers</code> are routed via CloudFront to API Gateway.</li>
+      <li><strong>Business Logic</strong> — API Gateway invokes Lambda functions (<code>getAllBurgersPython</code>, <code>addBurgerPython</code>, <code>deleteBurgerPython</code>).</li>
+      <li><strong>Data Storage</strong> — Lambda reads/writes items in DynamoDB using IAM-secured access.</li>
+      <li><strong>Authentication</strong> — The browser sends a login token with the request. API Gateway checks that token for POST and DELETE, but not for GET..</li>
+
+    </ul>
+</section>
+
+  <section>
+    <h2>Change Log / Diary</h2>
+    <ul id="diary-entries">
+      <li><strong>2025-08-12:</strong> Added <code>admin.html</code> with GET/POST/DELETE API calls to DynamoDB.</li>
+      <li><strong>2025-08-13:</strong> Updated Lambda to return proper JSON and handle different shapes.</li>
+      <li><strong>2025-08-14:</strong> Improved admin table rendering; added filters & sort buttons to main site.</li>
+      <li><strong>2025-08-15:</strong> Created <code>/architecture.html</code> to document AWS services and architecture.</li>
+      <li><strong>2025-08-18:</strong> Integrated Cognito (Hosted UI, SPA app client, admins group) and added API Gateway JWT authorizer for POST/DELETE; standardized 3-button nav and set no-cache for HTML.</li>
+    </ul>
+  </section>
+</body>
+</html>
