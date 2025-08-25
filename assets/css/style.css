@@ -46,7 +46,6 @@ h1 {
   gap: 8px;
   align-items: center;
   min-width: 0;        /* allow shrinking */
-  overflow: hidden;    /* avoid scroll bar */
   white-space: nowrap;
 }
 .filters > * { flex: 0 1 auto; }   /* children can shrink */
@@ -162,4 +161,25 @@ a { color: #1e90ff; text-decoration: none; }
 
   table { font-size: 14px; }
   th, td { padding: 8px; }
+}
+
+.intro {
+  max-width: 900px;
+  margin: 16px auto 24px;
+  padding: 0 12px;
+  color: inherit;            /* use default text color */
+  background: none;          /* remove box background */
+  border: none;              /* no border */
+}
+.intro h2 {
+  margin: 14px 0 8px;
+  font-size: 18px;
+  color: #ffbf80;            /* accent to stand out */
+}
+.score-legend {
+  margin: 0;
+  padding-left: 18px;
+}
+.score-legend li {
+  margin: 4px 0;
 }

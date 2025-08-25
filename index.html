@@ -7,8 +7,25 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <h1>🍔 DaBurgger Rankings 🍔 </h1>
+  <h1>🍔 DaBurgger - Burger Rankings 🍔 </h1>
 
+  <section class="intro">
+  <p>
+    I rank burgers from <strong>1 to 5 (no decimals)</strong> and post a picture on my
+    <a href="https://www.instagram.com/daburgger" target="_blank" rel="noopener">@daburgger</a> Instagram page.
+    This website compiles all the burgers I have tried and lets you filter and sort them.
+    I built it mainly to play with AWS services so yes, I know the UI needs work.
+    The full architecture is described on the Architecture</a> page.
+  </p>
+  <h2>How I score burgers</h2>
+  <ul class="score-legend">
+    <li><strong>1</strong> → Bad, no question about it.</li>
+    <li><strong>2</strong> → Hard to finish, but you might forget and come back.</li>
+    <li><strong>3</strong> → Good, but doesn’t exceed expectations.</li>
+    <li><strong>4</strong> → Solid, you’d recommend it to others.</li>
+    <li><strong>5</strong> → So good you couldn’t find a reason to only give it a 4.</li>
+  </ul>
+  </section>
 
   <div class="controls controls-split">
     <div class="col left">
@@ -37,7 +54,7 @@
     </div>
 
     <div style="margin-left:auto; display:flex; gap:10px;">
-      <a id="navMain" href="/index.html" class="back-btn">Main</a>
+      <a id="navMain" href="/index.html" class="back-btn">Ranking</a>
       <a id="navAdmin" href="/admin.html" class="other-btn">Admin</a>
       <a id="navArch"  href="/architecture.html" class="other-btn">Architecture</a>
     </div>
