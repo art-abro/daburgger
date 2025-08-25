@@ -14,27 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Configure AWS via OIDC
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      # Ensure AWS CLI is available
-      - uses: aws-actions/setup-aws-cli@v2
-
-      # Sanity check: caller identity
       - name: Who am I?
         run: aws sts get-caller-identity
 
-      # Upload assets with long cache
       - name: Sync assets
-        run: |
-          aws s3 sync assets s3://${{ secrets.S3_BUCKET_PROD }}/assets \
-            --delete \
-            --cache-control "public, max-age=31536000, immutable"
+        run: aws s3 sync assets s3://${{ secrets.S3_BUCKET_PROD }}/assets --delete --cache-control "public, max-age=31536000, immutable"
 
-      # Upload HTML with no-cache
       - name: Upload HTML
         run: |
           for f in index.html admin.html architecture.html; do
@@ -46,9 +36,5 @@ jobs:
             fi
           done
 
-      # Invalidate HTML and root
       - name: Invalidate CloudFront
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CF_DIST_ID_PROD }} \
-            --paths "/" "/index.html" "/admin.html" "/architecture.html"
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CF_DIST_ID_PROD }} --paths "/" "/index.html" "/admin.html" "/architecture.html"
