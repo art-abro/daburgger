@@ -7,24 +7,20 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <h1>DaBurgger — Architecture & Project Diary</h1>
+  <h1>🍔 DaBurgger - Architecture 🍔</h1>
 
   <!-- Top controls: links to Main and Admin -->
-  <div class="controls">
-    <div style="margin-left:auto; display:flex; gap:10px;">
-      <a id="navMain" href="/index.html" class="back-btn">Ranking</a>
+  <div style="margin-left: auto; display: flex; justify-content: center; gap: 10px;">
+      <a id="navMain" href="/index.html" class="other-btn">Ranking</a>
       <a id="navAdmin" href="/admin.html" class="other-btn">Admin</a>
-      <a id="navArch"  href="/architecture.html" class="other-btn">Architecture</a>
-    </div>
+      <a id="navArch"  href="/architecture.html" class="back-btn">Architecture</a>
   </div>
 
   <section>
     <h2>Context</h2>
     <p>
-      This project is simply a way to learn AWS by building something. Leveraging my
-      <a href="https://www.instagram.com/daburgger" target="_blank">@daburgger</a> Instagram page, I’m creating a
-      dedicated support site to showcase and expand burger reviews. The end goal is a platform where anyone can add their
-      own burgers — complete with ratings, reviews, and photos. This is work in progress and we will update the architecture description as we improve the app. The latest description update is from August 12th 2025.
+      This project is my first take at building something using AWS. It is a support site for my <a href="https://www.instagram.com/daburgger" target="_blank">@daburgger</a> Instagram page. The end goal is a platform where anyone can add their
+      own burgers. We are far from it yet.
     </p>
   </section>
 
@@ -78,16 +74,5 @@
 
     </ul>
 </section>
-
-  <section>
-    <h2>Change Log / Diary</h2>
-    <ul id="diary-entries">
-      <li><strong>2025-08-12:</strong> Added <code>admin.html</code> with GET/POST/DELETE API calls to DynamoDB.</li>
-      <li><strong>2025-08-13:</strong> Updated Lambda to return proper JSON and handle different shapes.</li>
-      <li><strong>2025-08-14:</strong> Improved admin table rendering; added filters & sort buttons to main site.</li>
-      <li><strong>2025-08-15:</strong> Created <code>/architecture.html</code> to document AWS services and architecture.</li>
-      <li><strong>2025-08-18:</strong> Integrated Cognito (Hosted UI, SPA app client, admins group) and added API Gateway JWT authorizer for POST/DELETE; standardized 3-button nav and set no-cache for HTML.</li>
-    </ul>
-  </section>
 </body>
 </html>

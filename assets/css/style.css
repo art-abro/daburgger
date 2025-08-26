@@ -27,7 +27,8 @@ h1 {
   flex-wrap: nowrap;           /* keep one line on desktop */
   gap: 20px;
 }
-.controls.controls-split .col {
+
+.controlsv t .col {
   flex: 1 1 0;                 /* allow shrink */
   display: flex;
   align-items: center;
